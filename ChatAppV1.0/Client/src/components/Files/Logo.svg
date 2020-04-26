@@ -1,0 +1,17 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text transform="rotate(-13 228.4999999999999,158.95312499999997) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="144" id="svg_2" y="207.453125" x="176.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#CC7C65">U</text>
+  <path transform="rotate(10 346.46246337890665,198.23587036132804) " stroke="#000" id="svg_3" d="m267.462467,140.79458l0,0c0,-9.69741 8.10551,-17.558714 18.104162,-17.558714l8.229169,0l0,0l39.499999,0l74.062478,0c4.801534,0 9.406396,1.849927 12.801593,5.142827c3.395176,3.2929 5.30258,7.75903 5.30258,12.415887l0,43.89679l0,0l0,26.338066l0,0c0,9.697416 -8.105505,17.558714 -18.104167,17.558714l-74.062478,0l-51.601875,44.647729l12.101876,-44.647729l-8.229169,0c-9.998652,0 -18.104162,-7.861298 -18.104162,-17.558714l0,0l0,-26.338066l0,0l-0.000005,-43.89679z" stroke-opacity="null" stroke-width="1.5" fill="#7DD8B5"/>
+  <text transform="rotate(10 348.99999999999994,173.953125) " xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="50" id="svg_4" y="192.453125" x="295.71875" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff">Chat</text>
+ </g>
+</svg>

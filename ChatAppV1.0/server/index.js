@@ -34,12 +34,14 @@ io.on('connection', (socket) => {
             return callback(err);
         }
 
-
-        socket.emit('message', {user: 'admin', text: `${user.name} from ${user.school} has joined this chat room!`});
-        socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} from ${user.school} has joined!`});
-
         socket.join(user.room);
 
+        socket.emit('message', {user: 'admin', text: `${user.name} from ${user.school} has joined this chat room!`});
+
+        socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} from ${user.school} has joined!`});
+
+
+        //Implement on client side
         io.to(user.room).emit('roomData', {room:user.room, users: getUsersInRoom(user.room)});
 
 
