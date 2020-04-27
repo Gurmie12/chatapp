@@ -5,6 +5,7 @@ import './Chat.css';
 import InfoBar from '../InfoBar/InfoBar';
 import MessageInput from '../MessageInput/MessageInput';
 import Messages from '../Messages/Messages';
+import UserList from '../UserList/UserList';
 
 let socket;
 
@@ -17,6 +18,7 @@ function Chat({location}){
     const[messages, setMessages] = useState([]);
     const [message, setMessage] = useState('');
     const ENDPOINT = 'localhost:5000';
+    const [users, setUsers] = useState([]);
 
     useEffect(() =>{
         const {name, age, room, school} = queryString.parse(location.search);
@@ -55,6 +57,14 @@ function Chat({location}){
         }
     }
 
+    useEffect(() =>{
+        socket.on('roomData', (data) =>{
+
+            const usersArr = data.users;
+            setUsers([...users, usersArr]);
+        })
+    }, [users])
+    console.log(users)
 
     return(
         <div>
@@ -62,6 +72,7 @@ function Chat({location}){
                 <InfoBar room={room}/>
                 <Messages messages={messages} name={name}/>
                 <MessageInput message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+                <UserList room={room} users={users} />
             </div>
         </div>
     )

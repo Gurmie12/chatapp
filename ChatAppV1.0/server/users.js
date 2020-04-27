@@ -13,7 +13,7 @@ const addUser = ({id, name, age, room, school}) =>{
 
     const user = {id, name, school, age, room};
     users.push(user);
-    return {user};
+    return user;
 }
 
 const removeUser = (id) =>{
@@ -30,7 +30,7 @@ const getUser = (id) =>{
 }
 
 const getUsersInRoom = (room) =>{
-    users.filter((user) => user.room === room)
+    return users.filter((user) => user.room === room);
 }
 
 
